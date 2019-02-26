@@ -1,1 +1,4 @@
-This is my first assignment from The Odin Project(TOP). It uses grid and flex grid to lay out the Google Home Page. Hopefully, other beginners like myself can use this project to help them better become a developer.
+<h1>This is my first assignment from The Odin Project(TOP).<h1>
+It uses grid and flex grid to lay out the Google Home Page. 
+Hopefully, other beginners like myself can use this project to help them better become a developer. Feel free to check it out
+<a href="https://kpchungdev.github.io/google_home_page/">here</a>.

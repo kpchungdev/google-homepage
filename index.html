@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <!-- Allows all languages to be typed on this site -->
         <meta charset="utf-8">
+        <!-- Notifies search engine who wrote this website -->
         <meta name="author" content="Kenny Chung">
-        <meta name="description" content="First The Odin Project Assignment, which
-        is to copy the Google home page.">
+        <!-- Allows search engines to write this description of this website as it's results-->
+        <meta name="description" content="First The Odin Project Assignment: Copy the Google homepage.">
+        <!-- For mobile support -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Includes Google as the tab name -->
         <title>Google</title>
         <!-- Google Icon for tab and bookmark -->
-        <link rel="shortcut icon" href="images/icon/google_icon.ico" type="image/x-icon" background-radius: 8px>
-        <link rel="stylesheet" href="css/home_page.css">
+        <link rel="shortcut icon" href="images/google_fav_icon.ico" type="image/x-icon">
+        <!-- Reset html so there is no confusion and I am doing all of the work -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- My customizations of the HTML which will override any of the reset.css -->
+        <link rel="stylesheet" href="css/homepage.css">
+        <!-- Allows usage of material.io icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-      <p>Hello World</p>
+      <!-- Container is a grid that fills the page -->
+      <div class="container">
+          <!-- Will not be used because I think the top of the Google homepage is for navigation purposes-->
+          <!-- <header><p>Header</p></header> -->
+          <!-- Will contain left: About Store | right: Gmail Images Apps(Icon) Alert(Icon) User(In this case, K wrapped in a circle background)-->
+          <nav>
+            <div class="left nav_bar_container_left">
+              <a class="nav_bar_link_left" href="#">About</a>
+              <a class="nav_bar_link_left" href="#">Store</a>
+            </div>
+            <div class="right nav_bar_container_right">
+              <a class="nav_bar_link_right" href="#">Gmail</a>
+              <a class="nav_bar_link_right" href="#">Images</a>
+              <a class="icon" href="#">
+                <i class="material-icons" title="Google apps">apps</i>
+              </a>
+              <a class="icon" href="#">
+                <img class="alert" title="0 Google notifications" src="https://img.icons8.com/material-rounded/30/000000/appointment-reminders.png">
+              </a>
+              <a class="icon" href="#" title="Google Account: Kenny Chung&#013;(kpchungdev@gmail.com)">
+                <img class="user" src="https://lh3.googleusercontent.com/-akdVg9fwteE/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcY6wjFpJCWBFvPDweFD00__o5HdA/s32-c-mo/photo.jpg">
+              </a>
+            </div>
+          </nav>
+          <!-- Will contain Google logo, search bar, google search button and I'm Feeling Lucky button-->
+          <main>
+              <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+              <div class="search_text_container">
+                <input class="search_edittext" type="text" maxlength="2048">
+              </div>
+              <div class="go_buttons_container">
+                  <input class="go_button" type="submit" value="Google Search">
+                  <input class="go_button" type="submit" value="I'm Feeling Lucky">
+              </div>
+          </main>
+          <!-- Will not contain aside because homepage does not contain a sidebar.-->
+          <!-- No <aside></aside> -->
+          <!-- Will be background in gray with left: Advertising, Business | right: Privacy Terms Settings-->
+          <footer>
+              <a href="#" class="left_footer footer_link">Advertising</a>
+              <a href="#" class="left_footer footer_link">Business</a>
+              <a href="#" class="right_footer footer_link">Settings</a>
+              <a href="#" class="right_footer footer_link">Terms</a>
+              <a href="#" class="right_footer footer_link">Privacy</a>
+          </footer>
+      </div>
     </body>
 </html>
